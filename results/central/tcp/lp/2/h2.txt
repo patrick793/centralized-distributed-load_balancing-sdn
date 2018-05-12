@@ -1,0 +1,141 @@
+------------------------------------------------------------
+Server listening on TCP port 5001 with pid 16118
+Read buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 36] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 40856 (Time: 1523842242363221378)
+[ 37] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 52656 (Time: 1523842244926189456)
+[ 38] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 50136 (Time: 1523842245255664854)
+[ 39] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 40892 (Time: 1523842245868993907)
+[ 40] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 52668 (Time: 1523842246138923550)
+[ 41] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 52682 (Time: 1523842247224619832)
+[ 42] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 50162 (Time: 1523842247497239522)
+[ 43] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 50174 (Time: 1523842248503220483)
+[ 44] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 52704 (Time: 1523842249248365256)
+[ 45] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 40940 (Time: 1523842250055603134)
+[ 46] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 50198 (Time: 1523842250516054653)
+[ 47] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 50208 (Time: 1523842251486644356)
+[ 49] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 40964 (Time: 1523842252024584748)
+[ 48] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 40962 (Time: 1523842252024593666)
+[ 50] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 50220 (Time: 1523842252549366183)
+TID [ 36]
+Interval 0.00-17.35 sec
+Transfer 10.0 MBytes
+Bandwidth 4.83 Mbits/sec
+Reads 1591
+DistBin 1492:59:18:7:6:1:1:7
+TotalTime 17.353222 sec
+
+TID [ 42]
+Interval 0.00-68.93 sec
+Transfer 10.0 MBytes
+Bandwidth 1.22 Mbits/sec
+Reads 2393
+DistBin 2347:25:10:6:4:1:0:0
+TotalTime 68.927686 sec
+
+TID [ 50]
+Interval 0.00-70.09 sec
+Transfer 10.0 MBytes
+Bandwidth 1.20 Mbits/sec
+Reads 2482
+DistBin 2438:27:5:4:4:2:1:1
+TotalTime 70.090416 sec
+
+TID [ 39]
+Interval 0.00-71.34 sec
+Transfer 10.0 MBytes
+Bandwidth 1.18 Mbits/sec
+Reads 2569
+DistBin 2529:19:12:6:2:1:0:0
+TotalTime 71.340017 sec
+
+TID [ 37]
+Interval 0.00-71.58 sec
+Transfer 10.0 MBytes
+Bandwidth 1.17 Mbits/sec
+Reads 2440
+DistBin 2384:29:15:8:1:3:0:0
+TotalTime 71.579080 sec
+
+TID [ 40]
+Interval 0.00-72.25 sec
+Transfer 10.0 MBytes
+Bandwidth 1.16 Mbits/sec
+Reads 2452
+DistBin 2410:17:12:7:3:2:1:0
+TotalTime 72.252769 sec
+
+TID [ 45]
+Interval 0.00-72.32 sec
+Transfer 10.0 MBytes
+Bandwidth 1.16 Mbits/sec
+Reads 2319
+DistBin 2264:29:13:9:0:2:2:0
+TotalTime 72.318709 sec
+
+TID [ 43]
+Interval 0.00-73.57 sec
+Transfer 10.0 MBytes
+Bandwidth 1.14 Mbits/sec
+Reads 2532
+DistBin 2493:22:10:4:0:2:0:1
+TotalTime 73.572630 sec
+
+TID [ 38]
+Interval 0.00-73.90 sec
+Transfer 10.0 MBytes
+Bandwidth 1.14 Mbits/sec
+Reads 2446
+DistBin 2399:25:11:5:6:0:0:0
+TotalTime 73.898645 sec
+
+TID [ 47]
+Interval 0.00-74.40 sec
+Transfer 10.0 MBytes
+Bandwidth 1.13 Mbits/sec
+Reads 2490
+DistBin 2448:22:11:7:2:0:0:0
+TotalTime 74.404247 sec
+
+TID [ 49]
+Interval 0.00-75.85 sec
+Transfer 10.0 MBytes
+Bandwidth 1.11 Mbits/sec
+Reads 2606
+DistBin 2566:20:11:7:1:0:0:1
+TotalTime 75.850016 sec
+
+TID [ 44]
+Interval 0.00-75.95 sec
+Transfer 10.0 MBytes
+Bandwidth 1.10 Mbits/sec
+Reads 2491
+DistBin 2448:29:9:4:1:0:0:0
+TotalTime 75.954298 sec
+
+TID [ 46]
+Interval 0.00-76.12 sec
+Transfer 10.0 MBytes
+Bandwidth 1.10 Mbits/sec
+Reads 2442
+DistBin 2402:20:10:2:8:0:0:0
+TotalTime 76.115562 sec
+
+TID [ 41]
+Interval 0.00-76.14 sec
+Transfer 10.0 MBytes
+Bandwidth 1.10 Mbits/sec
+Reads 2532
+DistBin 2499:19:7:5:2:0:0:0
+TotalTime 76.139873 sec
+
+TID [ 48]
+Interval 0.00-76.50 sec
+Transfer 10.0 MBytes
+Bandwidth 1.10 Mbits/sec
+Reads 2357
+DistBin 2287:54:11:4:1:0:0:0
+TotalTime 76.498878 sec
+
+[SUM] 0.00-76.50 sec   150 MBytes  16.4 Mbits/sec  36142    35406:416:165:85:41:14:5:10

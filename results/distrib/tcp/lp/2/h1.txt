@@ -1,0 +1,142 @@
+------------------------------------------------------------
+Server listening on TCP port 5001 with pid 17128
+Read buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 44] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 40046 (Time: 1523892702266024829)
+TID [ 44]
+Interval 0.00-1.00 sec
+Transfer 10.0 MBytes
+Bandwidth 84.3 Mbits/sec
+Reads 443
+DistBin 63:346:17:10:1:1:2:3
+TotalTime 0.995014 sec
+
+[ 44] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 42598 (Time: 1523892704856319578)
+[ 45] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 59060 (Time: 1523892704921948911)
+TID [ 44]
+Interval 0.00-1.70 sec
+Transfer 10.0 MBytes
+Bandwidth 49.3 Mbits/sec
+Reads 671
+DistBin 577:51:20:11:5:4:1:2
+TotalTime 1.701047 sec
+
+TID [ 45]
+Interval 0.00-2.14 sec
+Transfer 10.0 MBytes
+Bandwidth 39.2 Mbits/sec
+Reads 839
+DistBin 674:118:28:7:1:3:4:4
+TotalTime 2.141883 sec
+
+[SUM] 0.00-2.14 sec  20.0 MBytes  78.3 Mbits/sec  1510    1251:169:48:18:6:7:5:6
+[ 44] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 40106 (Time: 1523892707385387229)
+[ 45] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 59094 (Time: 1523892707828719060)
+[ 46] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 42638 (Time: 1523892707966402664)
+[ 47] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 40120 (Time: 1523892708404562694)
+TID [ 44]
+Interval 0.00-1.51 sec
+Transfer 10.0 MBytes
+Bandwidth 55.6 Mbits/sec
+Reads 569
+DistBin 361:157:30:11:5:3:0:2
+TotalTime 1.509543 sec
+
+[ 44] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 42652 (Time: 1523892709521231628)
+[ 48] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 40142 (Time: 1523892710545538487)
+[ 49] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 40144 (Time: 1523892710545547134)
+TID [ 47]
+Interval 0.00-3.66 sec
+Transfer 10.0 MBytes
+Bandwidth 22.9 Mbits/sec
+Reads 792
+DistBin 629:106:33:9:6:4:4:1
+TotalTime 3.664125 sec
+
+[ 50] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 59130 (Time: 1523892711085604267)
+[ 51] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 59142 (Time: 1523892712153931572)
+[ 47] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 59140 (Time: 1523892712154235207)
+[ 53] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 42688 (Time: 1523892712421622601)
+[ 52] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 42686 (Time: 1523892712421630672)
+TID [ 45]
+Interval 0.00-5.33 sec
+Transfer 10.0 MBytes
+Bandwidth 15.7 Mbits/sec
+Reads 1312
+DistBin 1192:84:23:7:5:0:1:0
+TotalTime 5.327228 sec
+
+TID [ 46]
+Interval 0.00-6.02 sec
+Transfer 10.0 MBytes
+Bandwidth 13.9 Mbits/sec
+Reads 1434
+DistBin 1323:81:16:7:2:3:2:0
+TotalTime 6.024204 sec
+
+TID [ 49]
+Interval 0.00-11.44 sec
+Transfer 10.0 MBytes
+Bandwidth 7.33 Mbits/sec
+Reads 1724
+DistBin 1608:87:23:6:0:0:0:0
+TotalTime 11.439376 sec
+
+TID [ 50]
+Interval 0.00-12.29 sec
+Transfer 10.0 MBytes
+Bandwidth 6.83 Mbits/sec
+Reads 1611
+DistBin 1483:90:25:9:1:3:0:0
+TotalTime 12.288538 sec
+
+TID [ 48]
+Interval 0.00-13.07 sec
+Transfer 10.0 MBytes
+Bandwidth 6.42 Mbits/sec
+Reads 1757
+DistBin 1651:89:10:6:1:0:0:0
+TotalTime 13.066181 sec
+
+TID [ 51]
+Interval 0.00-15.20 sec
+Transfer 10.0 MBytes
+Bandwidth 5.52 Mbits/sec
+Reads 1754
+DistBin 1654:76:14:8:2:0:0:0
+TotalTime 15.198082 sec
+
+TID [ 47]
+Interval 0.00-15.19 sec
+Transfer 10.0 MBytes
+Bandwidth 5.52 Mbits/sec
+Reads 1776
+DistBin 1688:63:19:4:1:0:0:1
+TotalTime 15.193499 sec
+
+TID [ 53]
+Interval 0.00-15.45 sec
+Transfer 10.0 MBytes
+Bandwidth 5.43 Mbits/sec
+Reads 1769
+DistBin 1670:79:12:6:2:0:0:0
+TotalTime 15.445197 sec
+
+TID [ 52]
+Interval 0.00-15.44 sec
+Transfer 10.0 MBytes
+Bandwidth 5.43 Mbits/sec
+Reads 1882
+DistBin 1799:61:17:4:0:0:0:1
+TotalTime 15.443169 sec
+
+TID [ 44]
+Interval 0.00-31.23 sec
+Transfer 10.0 MBytes
+Bandwidth 2.69 Mbits/sec
+Reads 2193
+DistBin 2136:40:9:1:2:1:2:2
+TotalTime 31.230081 sec
+
+[SUM] 0.00-31.23 sec   120 MBytes  32.2 Mbits/sec  18573    17194:1013:231:78:27:14:9:7

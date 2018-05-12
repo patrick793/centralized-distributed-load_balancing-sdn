@@ -1,0 +1,300 @@
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 16170
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.0.0.4 port 52634 connected with 10.0.0.100 port 5001 (Time: 1523842242582127242)
+[  3] local 10.0.0.4 port 52632 connected with 10.0.0.100 port 5001 (Time: 1523842242582133292)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 16191
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.0.0.4 port 52646 connected with 10.0.0.100 port 5001 (Time: 1523842243600974305)
+[  3] local 10.0.0.4 port 52644 connected with 10.0.0.100 port 5001 (Time: 1523842243600981440)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 16214
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.0.0.4 port 52658 connected with 10.0.0.100 port 5001 (Time: 1523842244705729183)
+[  3] local 10.0.0.4 port 52656 connected with 10.0.0.100 port 5001 (Time: 1523842244705735829)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 16241
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.0.0.4 port 52670 connected with 10.0.0.100 port 5001 (Time: 1523842245810742839)
+[  3] local 10.0.0.4 port 52668 connected with 10.0.0.100 port 5001 (Time: 1523842245821005029)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 16266
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.0.0.4 port 52682 connected with 10.0.0.100 port 5001 (Time: 1523842246948600734)
+[  3] local 10.0.0.4 port 52680 connected with 10.0.0.100 port 5001 (Time: 1523842246948606797)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 16293
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.0.0.4 port 52694 connected with 10.0.0.100 port 5001 (Time: 1523842248000325133)
+[  3] local 10.0.0.4 port 52692 connected with 10.0.0.100 port 5001 (Time: 1523842248000330744)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 16320
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.0.0.4 port 52706 connected with 10.0.0.100 port 5001 (Time: 1523842248922016913)
+[  3] local 10.0.0.4 port 52704 connected with 10.0.0.100 port 5001 (Time: 1523842248922024190)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 16347
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.0.0.4 port 52718 connected with 10.0.0.100 port 5001 (Time: 1523842250033496218)
+[  3] local 10.0.0.4 port 52716 connected with 10.0.0.100 port 5001 (Time: 1523842250033501867)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 16374
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.0.0.4 port 52730 connected with 10.0.0.100 port 5001 (Time: 1523842251016815437)
+[  3] local 10.0.0.4 port 52728 connected with 10.0.0.100 port 5001 (Time: 1523842251016821591)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 16403
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.0.0.4 port 52742 connected with 10.0.0.100 port 5001 (Time: 1523842251945413933)
+[  3] local 10.0.0.4 port 52740 connected with 10.0.0.100 port 5001 (Time: 1523842251945419342)
+TID [  4]
+Interval 0.00-29.86 sec
+Transfer 10.0 MBytes
+Bandwidth 2.81 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 73
+Cwnd 103K
+RTTO 355983 us
+TotalTime 29.855607 sec
+
+TID [  3]
+Interval 0.00-33.87 sec
+Transfer 10.0 MBytes
+Bandwidth 2.48 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 91
+Cwnd 66K
+RTTO 339692 us
+TotalTime 33.870975 sec
+
+[SUM] 0.00-33.87 sec  20.0 MBytes  4.95 Mbits/sec  2/0       164
+TID [  4]
+Interval 0.00-49.66 sec
+Transfer 10.0 MBytes
+Bandwidth 1.69 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 99
+Cwnd 32K
+RTTO 197398 us
+TotalTime 49.662453 sec
+
+TID [  3]
+Interval 0.00-55.84 sec
+Transfer 10.0 MBytes
+Bandwidth 1.50 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 77
+Cwnd 41K
+RTTO 247502 us
+TotalTime 55.843280 sec
+
+[SUM] 0.00-55.84 sec  20.0 MBytes  3.00 Mbits/sec  2/0       176
+TID [  4]
+Interval 0.00-63.36 sec
+Transfer 10.0 MBytes
+Bandwidth 1.32 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 119
+Cwnd 36K
+RTTO 226179 us
+TotalTime 63.356804 sec
+
+TID [  3]
+Interval 0.00-63.75 sec
+Transfer 10.0 MBytes
+Bandwidth 1.32 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 110
+Cwnd 28K
+RTTO 243602 us
+TotalTime 63.745947 sec
+
+TID [  4]
+Interval 0.00-61.23 sec
+Transfer 10.0 MBytes
+Bandwidth 1.37 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 85
+Cwnd 48K
+RTTO 256771 us
+TotalTime 61.232076 sec
+
+TID [  4]
+Interval 0.00-60.30 sec
+Transfer 10.0 MBytes
+Bandwidth 1.39 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 85
+Cwnd 53K
+RTTO 257175 us
+TotalTime 60.303118 sec
+
+TID [  3]
+Interval 0.00-67.10 sec
+Transfer 10.0 MBytes
+Bandwidth 1.25 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 83
+Cwnd 53K
+RTTO 267330 us
+TotalTime 67.103647 sec
+
+[SUM] 0.00-67.10 sec  20.0 MBytes  2.50 Mbits/sec  2/0       202
+TID [  4]
+Interval 0.00-66.92 sec
+Transfer 10.0 MBytes
+Bandwidth 1.25 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 108
+Cwnd 70K
+RTTO 331370 us
+TotalTime 66.920604 sec
+
+[SUM] 0.00-66.92 sec  20.0 MBytes  2.51 Mbits/sec  2/0       218
+TID [  3]
+Interval 0.00-66.81 sec
+Transfer 10.0 MBytes
+Bandwidth 1.26 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 114
+Cwnd 35K
+RTTO 226765 us
+TotalTime 66.809977 sec
+
+TID [  3]
+Interval 0.00-65.77 sec
+Transfer 10.0 MBytes
+Bandwidth 1.28 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 115
+Cwnd 46K
+RTTO 224166 us
+TotalTime 65.769757 sec
+
+TID [  3]
+Interval 0.00-64.54 sec
+Transfer 10.0 MBytes
+Bandwidth 1.30 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 129
+Cwnd 72K
+RTTO 193526 us
+TotalTime 64.541319 sec
+
+[SUM] 0.00-64.54 sec  20.0 MBytes  2.60 Mbits/sec  2/0       214
+TID [  3]
+Interval 0.00-63.31 sec
+Transfer 10.0 MBytes
+Bandwidth 1.32 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 125
+Cwnd 46K
+RTTO 188711 us
+TotalTime 63.314897 sec
+
+TID [  4]
+Interval 0.00-69.34 sec
+Transfer 10.0 MBytes
+Bandwidth 1.21 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 84
+Cwnd 48K
+RTTO 103828 us
+TotalTime 69.338072 sec
+
+[SUM] 0.00-69.34 sec  20.0 MBytes  2.42 Mbits/sec  2/0       199
+TID [  3]
+Interval 0.00-68.65 sec
+Transfer 10.0 MBytes
+Bandwidth 1.22 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 105
+Cwnd 56K
+RTTO 112165 us
+TotalTime 68.651888 sec
+
+TID [  4]
+Interval 0.00-70.95 sec
+Transfer 10.0 MBytes
+Bandwidth 1.18 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 70
+Cwnd 55K
+RTTO 108503 us
+TotalTime 70.953140 sec
+
+[SUM] 0.00-70.95 sec  20.0 MBytes  2.36 Mbits/sec  2/0       184
+TID [  4]
+Interval 0.00-69.03 sec
+Transfer 10.0 MBytes
+Bandwidth 1.22 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 120
+Cwnd 86K
+RTTO 112433 us
+TotalTime 69.033507 sec
+
+[SUM] 0.00-69.03 sec  20.0 MBytes  2.43 Mbits/sec  2/0       225
+TID [  3]
+Interval 0.00-67.08 sec
+Transfer 10.0 MBytes
+Bandwidth 1.25 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 97
+Cwnd 83K
+RTTO 108495 us
+TotalTime 67.078923 sec
+
+[SUM] 0.00-67.08 sec  20.0 MBytes  2.50 Mbits/sec  2/0       182
+TID [  4]
+Interval 0.00-66.22 sec
+Transfer 10.0 MBytes
+Bandwidth 1.27 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 123
+Cwnd 60K
+RTTO 107795 us
+TotalTime 66.216849 sec
+
+[SUM] 0.00-66.22 sec  20.0 MBytes  2.53 Mbits/sec  2/0       248

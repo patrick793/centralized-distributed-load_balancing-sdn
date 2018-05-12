@@ -1,0 +1,75 @@
+------------------------------------------------------------
+Server listening on UDP port 5001 with pid 24495
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 57456 (Time: 1523851620298024720)
+[ 36] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 53888 (Time: 1523851621721666226)
+[ 37] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 33560 (Time: 1523851621721676836)
+[ 38] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 42216 (Time: 1523851621745447705)
+TID [ 38]
+Interval 0.00-11.78 sec
+Transfer 6.78 MBytes
+Bandwidth 4.83 Mbits/sec
+Jitter 0.291651 ms
+LostO 2301
+TotalO  7134
+RateO 32%
+LatencyAvg 22.792 ms
+LatencyMin  0.002 ms
+LatencyMax 330.611 ms
+LatencyStdev 51.432 ms
+PPSO  410 pps
+[ 38] 0.00-11.78 sec  131 datagrams received out-of-order
+TotalTime 11.777867 sec
+
+TID [ 35]
+Interval 0.00-12.67 sec
+Transfer 9.34 MBytes
+Bandwidth 6.18 Mbits/sec
+Jitter 0.282664 ms
+LostO  470
+TotalO  7134
+RateO 6.6%
+LatencyAvg 20.088 ms
+LatencyMin  0.002 ms
+LatencyMax 442.879 ms
+LatencyStdev 49.605 ms
+PPSO  525 pps
+[ 35] 0.00-12.67 sec  157 datagrams received out-of-order
+TotalTime 12.673384 sec
+
+TID [ 37]
+Interval 0.00-13.09 sec
+Transfer 8.05 MBytes
+Bandwidth 5.16 Mbits/sec
+Jitter 0.314037 ms
+LostO 1394
+TotalO  7134
+RateO 20%
+LatencyAvg  7.331 ms
+LatencyMin  0.002 ms
+LatencyMax 59.099 ms
+LatencyStdev 11.460 ms
+PPSO  438 pps
+[ 37] 0.00-13.09 sec  250 datagrams received out-of-order
+TotalTime 13.088172 sec
+
+TID [ 36]
+Interval 0.00-13.10 sec
+Transfer 8.12 MBytes
+Bandwidth 5.20 Mbits/sec
+Jitter 0.306766 ms
+LostO 1340
+TotalO  7134
+RateO 19%
+LatencyAvg  7.576 ms
+LatencyMin  0.002 ms
+LatencyMax 58.257 ms
+LatencyStdev 11.671 ms
+PPSO  442 pps
+[ 36] 0.00-13.10 sec  302 datagrams received out-of-order
+TotalTime 13.095058 sec
+
+[SUM] 0.00-13.10 sec  32.3 MBytes  20.7 Mbits/sec 1815 pps
+[SUM] 0.00-13.10 sec  840 datagrams received out-of-order

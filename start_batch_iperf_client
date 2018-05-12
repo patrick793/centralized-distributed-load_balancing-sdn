@@ -1,0 +1,86 @@
+#! /bin/bash
+
+HOST=$1
+TCPUDP=$2
+PARALLEL=$3
+# MTIME=$4
+first="04/15/2018"
+lb="rr"
+lbmode="tcp"
+ntype="distrib"
+# sudo rm -R "$HOST".txt "$HOST"T.txt
+sudo rm -R "$HOST".txt
+
+
+current_epoch=$(date +%s)
+# target_epoch=$(date -d "$first $MTIME" +%s)
+target_epoch=$(( ($current_epoch / 10) * 10 + 10 ))
+sleep_seconds=$(( $target_epoch - $current_epoch ))
+
+echo $sleep_seconds
+
+sleep $sleep_seconds
+
+
+if [ $TCPUDP == "u" ]; then
+	counter=1
+	while [ $counter -le 1 ]
+	do
+		./start_iperf_client "$HOST" "$TCPUDP" "$PARALLEL" &
+		((counter++))
+		sleep 1
+	done
+elif [ $TCPUDP == "t" ]; then
+	counter=1
+	while [ $counter -le 10 ]
+	do
+		./start_iperf_client "$HOST" "$TCPUDP" "$PARALLEL" &
+		((counter++))
+		sleep 1
+	done
+fi
+
+if [ $? -eq 0 ]; then
+	sleep 3
+	
+	# if [ "cat ryu/ryu/app/sample.py | grep True | grep is_rr" ]
+	# then
+	# 	lb="rr"
+	# elif [ "cat ryu/ryu/app/sample.py | grep True | grep is_rb" ]
+	# then
+	# 	lb="rb"
+	# elif [ "cat ryu/ryu/app/sample.py | grep True | grep is_ih" ]
+	# then
+	# 	lb="ih"
+	# elif [ "cat ryu/ryu/app/sample.py | grep True | grep is_lc" ]
+	# then
+	# 	lb="lc"
+	# elif [ "cat ryu/ryu/app/sample.py | grep True | grep is_lb" ]
+	# then
+	# 	lb="lb"
+	# elif [ "cat ryu/ryu/app/sample.py | grep True | grep is_lp" ]
+	# then
+	# 	lb="lp"
+	# fi
+
+	
+	# if [ "cat ryu/ryu/app/sample.py | grep True | grep is_tcp" ]
+	# then
+	# 	lbmode="tcp"
+	# elif [ "cat ryu/ryu/app/sample.py | grep True | grep is_udp" ]
+	# then
+	# 	lbmode="udp"
+	# fi
+
+	# if [ "cat centralized_topo.py | grep 'spine_switches =' | grep 1" ]
+	# then
+	# 	ntype="central"
+	# fi
+
+	# mkdir -p results/"$ntype"/"$lbmode"/"$lb"/"$PARALLEL" > /dev/null
+	# cp "$HOST".txt results/"$ntype"/"$lbmode"/"$lb"/"$PARALLEL"
+	# cp h1.txt h2.txt h3.txt results/"$ntype"/"$lbmode"/"$lb"/"$PARALLEL" > /dev/null
+    echo "Finished"
+else
+    echo FAIL
+fi

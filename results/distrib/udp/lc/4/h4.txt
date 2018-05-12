@@ -1,0 +1,43 @@
+------------------------------------------------------------
+Client connecting to 10.0.0.100, UDP port 5001 with pid 25218
+Sending 1470 byte datagrams, IPG target: 112.15 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  6] local 10.0.0.4 port 33949 connected with 10.0.0.100 port 5001 (Time: 1523908721045053867)
+[  3] local 10.0.0.4 port 54322 connected with 10.0.0.100 port 5001 (Time: 1523908721065914296)
+[  4] local 10.0.0.4 port 35169 connected with 10.0.0.100 port 5001 (Time: 1523908721067034342)
+[  5] local 10.0.0.4 port 51213 connected with 10.0.0.100 port 5001 (Time: 1523908721067037713)
+TID [  3]
+Interval 0.00-7.80 sec
+Transfer 10.0 MBytes
+Bandwidth 10.8 Mbits/sec
+PPSO  915 pps
+[  3] Sent 7134 datagrams
+TotalTime 7.795975 sec
+
+TID [  4]
+Interval 0.00-7.85 sec
+Transfer 10.0 MBytes
+Bandwidth 10.7 Mbits/sec
+PPSO  909 pps
+[  4] Sent 7134 datagrams
+TotalTime 7.845817 sec
+
+TID [  6]
+Interval 0.00-7.97 sec
+Transfer 10.0 MBytes
+Bandwidth 10.5 Mbits/sec
+PPSO  895 pps
+[  6] Sent 7134 datagrams
+TotalTime 7.967312 sec
+
+TID [  5]
+Interval 0.00-8.00 sec
+Transfer 10.0 MBytes
+Bandwidth 10.5 Mbits/sec
+PPSO  891 pps
+[  5] Sent 7134 datagrams
+TotalTime 7.998703 sec
+
+[SUM] 0.00-8.00 sec  40.0 MBytes  42.0 Mbits/sec 3610 pps
+[SUM] Sent 28536 datagrams

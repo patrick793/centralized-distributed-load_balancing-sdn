@@ -1,0 +1,20 @@
+#! /bin/bash
+
+HOST=$1
+TCPUDP=$2
+PARALLEL=$3
+
+# echo $ASD
+# random_num=$RANDOM
+# echo "`date +%s%N` $random_num" >> "$HOST"T.txt
+if [ $TCPUDP == "u" ]; then
+	iperf -u -c 10.0.0.100 -b 100M -n 10M -P $PARALLEL -e | tee -a "$HOST".txt
+elif [ $TCPUDP == "t" ]; then
+	iperf -c 10.0.0.100 -n 10M -P $PARALLEL -e | tee -a "$HOST".txt
+fi
+
+# if [ $? -eq 0 ]; then
+#     echo "`date +%s%N` $random_num" >> "$HOST"T.txt
+# else
+#     echo FAIL
+# fi

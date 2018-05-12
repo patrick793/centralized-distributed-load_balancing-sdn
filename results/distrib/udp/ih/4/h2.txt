@@ -1,0 +1,75 @@
+------------------------------------------------------------
+Server listening on UDP port 5001 with pid 21100
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 44051 (Time: 1523898871253384859)
+[ 44] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 50172 (Time: 1523898871289897982)
+[ 45] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 56111 (Time: 1523898871316407677)
+[ 46] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 56892 (Time: 1523898871316420421)
+TID [ 43]
+Interval 0.00-6.91 sec
+Transfer 8.86 MBytes
+Bandwidth 10.8 Mbits/sec
+Jitter 0.603540 ms
+LostO  814
+TotalO  7134
+RateO 11%
+LatencyAvg 15.928 ms
+LatencyMin  0.001 ms
+LatencyMax 189.882 ms
+LatencyStdev 22.957 ms
+PPSO  914 pps
+[ 43] 0.00-6.91 sec  90 datagrams received out-of-order
+TotalTime 6.909793 sec
+
+TID [ 45]
+Interval 0.00-6.95 sec
+Transfer 8.84 MBytes
+Bandwidth 10.7 Mbits/sec
+Jitter 0.527403 ms
+LostO  825
+TotalO  7134
+RateO 12%
+LatencyAvg 16.492 ms
+LatencyMin  0.001 ms
+LatencyMax 185.985 ms
+LatencyStdev 22.850 ms
+PPSO  907 pps
+[ 45] 0.00-6.95 sec  131 datagrams received out-of-order
+TotalTime 6.953487 sec
+
+TID [ 44]
+Interval 0.00-6.97 sec
+Transfer 8.83 MBytes
+Bandwidth 10.6 Mbits/sec
+Jitter 0.376608 ms
+LostO  836
+TotalO  7134
+RateO 12%
+LatencyAvg 15.904 ms
+LatencyMin  0.001 ms
+LatencyMax 189.007 ms
+LatencyStdev 22.944 ms
+PPSO  903 pps
+[ 44] 0.00-6.97 sec  97 datagrams received out-of-order
+TotalTime 6.972465 sec
+
+TID [ 46]
+Interval 0.00-7.08 sec
+Transfer 8.79 MBytes
+Bandwidth 10.4 Mbits/sec
+Jitter 0.607959 ms
+LostO  865
+TotalO  7134
+RateO 12%
+LatencyAvg 14.436 ms
+LatencyMin  0.001 ms
+LatencyMax 187.600 ms
+LatencyStdev 21.516 ms
+PPSO  885 pps
+[ 46] 0.00-7.08 sec  82 datagrams received out-of-order
+TotalTime 7.075973 sec
+
+[SUM] 0.00-7.08 sec  35.3 MBytes  41.9 Mbits/sec 3609 pps
+[SUM] 0.00-7.08 sec  400 datagrams received out-of-order

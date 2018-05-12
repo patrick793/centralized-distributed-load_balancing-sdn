@@ -1,0 +1,75 @@
+------------------------------------------------------------
+Server listening on UDP port 5001 with pid 20176
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 42530 (Time: 1523897460860171559)
+[ 44] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 56264 (Time: 1523897461244515494)
+[ 45] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 34585 (Time: 1523897461244520187)
+[ 46] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 52240 (Time: 1523897461944284986)
+TID [ 43]
+Interval 0.00-6.54 sec
+Transfer 9.08 MBytes
+Bandwidth 11.6 Mbits/sec
+Jitter 0.577573 ms
+LostO  660
+TotalO  7134
+RateO 9.3%
+LatencyAvg 28.505 ms
+LatencyMin  0.001 ms
+LatencyMax 183.121 ms
+LatencyStdev 41.480 ms
+PPSO  990 pps
+[ 43] 0.00-6.54 sec  6 datagrams received out-of-order
+TotalTime 6.535925 sec
+
+TID [ 45]
+Interval 0.00-6.84 sec
+Transfer 7.85 MBytes
+Bandwidth 9.64 Mbits/sec
+Jitter 0.758783 ms
+LostO 1531
+TotalO  7134
+RateO 21%
+LatencyAvg 52.055 ms
+LatencyMin  0.001 ms
+LatencyMax 431.986 ms
+LatencyStdev 77.400 ms
+PPSO  819 pps
+[ 45] 0.00-6.84 sec  298 datagrams received out-of-order
+TotalTime 6.835838 sec
+
+TID [ 44]
+Interval 0.00-6.90 sec
+Transfer 8.56 MBytes
+Bandwidth 10.4 Mbits/sec
+Jitter 0.604311 ms
+LostO 1025
+TotalO  7134
+RateO 14%
+LatencyAvg 46.474 ms
+LatencyMin  0.001 ms
+LatencyMax 243.749 ms
+LatencyStdev 54.889 ms
+PPSO  884 pps
+[ 44] 0.00-6.90 sec  249 datagrams received out-of-order
+TotalTime 6.904432 sec
+
+TID [ 46]
+Interval 0.00-7.33 sec
+Transfer 8.06 MBytes
+Bandwidth 9.22 Mbits/sec
+Jitter 0.271891 ms
+LostO 1388
+TotalO  7134
+RateO 19%
+LatencyAvg 32.751 ms
+LatencyMin  0.001 ms
+LatencyMax 293.000 ms
+LatencyStdev 46.674 ms
+PPSO  784 pps
+[ 46] 0.00-7.33 sec  29 datagrams received out-of-order
+TotalTime 7.327930 sec
+
+[SUM] 0.00-7.33 sec  33.6 MBytes  38.4 Mbits/sec 3477 pps
+[SUM] 0.00-7.33 sec  582 datagrams received out-of-order
