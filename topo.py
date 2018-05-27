@@ -18,7 +18,7 @@ class MyTopo( Topo ):
 
     servers = 3
     clients = 3
-    spine_switches = 2
+    spine_switches = 3
 
     hosts = []
     switches = []

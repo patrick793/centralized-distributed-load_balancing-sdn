@@ -4,7 +4,7 @@ HOST=$1
 TCPUDP=$2
 PARALLEL=$3
 # MTIME=$4
-first="04/15/2018"
+first="05/27/2018"
 lb="rr"
 lbmode="tcp"
 ntype="distrib"
@@ -32,7 +32,7 @@ if [ $TCPUDP == "u" ]; then
 	done
 elif [ $TCPUDP == "t" ]; then
 	counter=1
-	while [ $counter -le 10 ]
+	while [ $counter -le 1 ]
 	do
 		./start_iperf_client "$HOST" "$TCPUDP" "$PARALLEL" &
 		((counter++))
