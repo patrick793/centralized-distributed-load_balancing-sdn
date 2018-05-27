@@ -1,0 +1,79 @@
+------------------------------------------------------------
+Client connecting to 10.0.0.100, UDP port 5001 with pid 3148
+Sending 1470 byte datagrams, IPG target: 112.15 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[ 50] local 10.0.0.4 port 38424 connected with 10.0.0.100 port 5001 (Time: 1527398170093665043)
+[ 43] local 10.0.0.4 port 41982 connected with 10.0.0.100 port 5001 (Time: 1527398170093668316)
+[ 44] local 10.0.0.4 port 33228 connected with 10.0.0.100 port 5001 (Time: 1527398170093671022)
+[ 46] local 10.0.0.4 port 49166 connected with 10.0.0.100 port 5001 (Time: 1527398170103740636)
+[ 47] local 10.0.0.4 port 43934 connected with 10.0.0.100 port 5001 (Time: 1527398170103750431)
+[ 45] local 10.0.0.4 port 54373 connected with 10.0.0.100 port 5001 (Time: 1527398170103753574)
+[ 48] local 10.0.0.4 port 37103 connected with 10.0.0.100 port 5001 (Time: 1527398170103756514)
+[ 49] local 10.0.0.4 port 43243 connected with 10.0.0.100 port 5001 (Time: 1527398170103759215)
+TID [ 48]
+Interval 0.00-6.78 sec
+Transfer 10.0 MBytes
+Bandwidth 12.4 Mbits/sec
+PPSO 1052 pps
+[ 48] Sent 7134 datagrams
+TotalTime 6.779973 sec
+
+TID [ 46]
+Interval 0.00-6.79 sec
+Transfer 10.0 MBytes
+Bandwidth 12.4 Mbits/sec
+PPSO 1050 pps
+[ 46] Sent 7134 datagrams
+TotalTime 6.791465 sec
+
+TID [ 43]
+Interval 0.00-6.80 sec
+Transfer 10.0 MBytes
+Bandwidth 12.3 Mbits/sec
+PPSO 1048 pps
+[ 43] Sent 7134 datagrams
+TotalTime 6.802215 sec
+
+TID [ 50]
+Interval 0.00-6.81 sec
+Transfer 10.0 MBytes
+Bandwidth 12.3 Mbits/sec
+PPSO 1047 pps
+[ 50] Sent 7134 datagrams
+TotalTime 6.813464 sec
+
+TID [ 47]
+Interval 0.00-6.82 sec
+Transfer 10.0 MBytes
+Bandwidth 12.3 Mbits/sec
+PPSO 1045 pps
+[ 47] Sent 7134 datagrams
+TotalTime 6.824350 sec
+
+TID [ 45]
+Interval 0.00-6.83 sec
+Transfer 10.0 MBytes
+Bandwidth 12.3 Mbits/sec
+PPSO 1044 pps
+[ 45] Sent 7134 datagrams
+TotalTime 6.828717 sec
+
+TID [ 49]
+Interval 0.00-6.84 sec
+Transfer 10.0 MBytes
+Bandwidth 12.3 Mbits/sec
+PPSO 1043 pps
+[ 49] Sent 7134 datagrams
+TotalTime 6.839245 sec
+
+TID [ 44]
+Interval 0.00-6.85 sec
+Transfer 10.0 MBytes
+Bandwidth 12.2 Mbits/sec
+PPSO 1041 pps
+[ 44] Sent 7134 datagrams
+TotalTime 6.851762 sec
+
+[SUM] 0.00-6.85 sec  80.0 MBytes  98.0 Mbits/sec 8370 pps
+[SUM] Sent 57072 datagrams
