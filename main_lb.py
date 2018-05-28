@@ -58,15 +58,15 @@ class SimpleSwitch13(app_manager.RyuApp):
         self.server_cnt = 3
 
 
-        self.is_rr = True  # Round-robin
+        self.is_rr = False  # Round-robin
         self.is_ih = False # IP Hashing
-        self.is_rb = False # Weighted Random
+        self.is_rb = True  # Weighted Random
         self.is_lc = False  # Least connections
         self.is_lb = False   # Least bandwidth
         self.is_lp = False   # Least packets
 
-        self.is_tcp = True
-        self.is_udp = False
+        self.is_tcp = False
+        self.is_udp = True
 
         self.mac_to_port = {}
         self.port_to_mac = {}
@@ -186,7 +186,7 @@ class SimpleSwitch13(app_manager.RyuApp):
             for x in range(len(self.spine_dpids) / 2):
                 self.spine_weights.append({"w" : self.max_weight, "i" : x})
             for x in self.server_leaf_dpids:
-                self.server_leaf_weights.append({"w" : self.max_weight, "i" : x})
+                self.server_leaf_weights.append({"w" : self.max_weight, "i" : x-1})
 
         if self.is_lc or self.is_lb or self.is_lp:
             for x in range(len(self.spine_dpids) / 2):
@@ -660,7 +660,7 @@ class SimpleSwitch13(app_manager.RyuApp):
                 
             return cur_spine_dpid_upper, cur_spine_dpid_lower, cur_server_leaf_dpid
         elif self.is_rb:
-            r = randint(0, self.max_weight)
+            r = randint(0, self.spine_weights[0]["w"])
             for i, x in enumerate(self.spine_weights):
                 if r <= x["w"]:
                     cur_spine_dpid_upper = self.spine_dpids[x["i"] + len(self.spine_dpids) / 2]
@@ -670,14 +670,14 @@ class SimpleSwitch13(app_manager.RyuApp):
                         for w in range(len(self.spine_weights)):
                             self.spine_weights[w]["w"] *= self.max_weight
                     break
-            r = randint(0, self.max_weight)
+            r = randint(0, self.server_leaf_weights[0]["w"])
             for i, x in enumerate(self.server_leaf_weights):
                 if r <= x["w"]:
                     cur_server_leaf_dpid = self.server_leaf_dpids[x["i"]]
                     self.server_leaf_weights[i]["w"] /= 2
                     if self.server_leaf_weights[i]["w"] == 1:
                         for w in range(len(self.server_leaf_weights)):
-                            self.server_leaf_weights[w]["w"] *= self.server_leaf_weights
+                            self.server_leaf_weights[w]["w"] *= self.max_weight
                     break
             self.spine_weights.sort(reverse=True)
             self.server_leaf_weights.sort(reverse=True)
