@@ -2,7 +2,7 @@
 
 # sudo mn --custom centralized_topo.py --topo mytopo --link tc,bw=1000,delay=10ms --controller=remote,ip=10.0.1.1,port=6633
 # sudo mn --custom centralized_topo.py --topo mytopo --link tc,bw=1000,delay=10ms --controller=remote,port=6633
-# sudo mn --custom centralized_topo.py --topo mytopo --link tc --controller=remote,port=6633 --mac
+# sudo mn --custom topo.py --topo mytopo --link tc --controller=remote,port=6633 --mac
 
 from mininet.topo import Topo
 from mininet.node import OVSKernelSwitch
@@ -18,7 +18,7 @@ class MyTopo( Topo ):
 
     servers = 3
     clients = 3
-    spine_switches = 3
+    spine_switches = 1
 
     hosts = []
     switches = []

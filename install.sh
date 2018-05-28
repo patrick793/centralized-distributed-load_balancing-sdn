@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update
+
 sudo apt-get install htop
 git clone git://github.com/mininet/mininet
 git clone git://github.com/osrg/ryu.git
