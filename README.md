@@ -13,6 +13,9 @@ This study uses these following tools:
 
 ### Installation
 
+##### Quick Install
+* Run install.sh
+
 ##### Mininet
 
 * Download Mininet VM image in this link: https://github.com/mininet/mininet/wiki/Mininet-VM-Images
