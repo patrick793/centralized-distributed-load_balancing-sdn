@@ -1,0 +1,24 @@
+------------------------------------------------------------
+Server listening on TCP port 5001 with pid 1590
+Read buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 36] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 41808 (Time: 1527799762613246162)
+[ 37] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 41810 (Time: 1527799762874888374)
+TID [ 37]
+Interval 0.00-18.67 sec
+Transfer 3.12 MBytes
+Bandwidth 1.40 Mbits/sec
+Reads 891
+DistBin 874:12:1:2:0:0:1:1
+TotalTime 18.666495 sec
+
+TID [ 36]
+Interval 0.00-19.89 sec
+Transfer 4.38 MBytes
+Bandwidth 1.84 Mbits/sec
+Reads 1354
+DistBin 1341:4:4:1:0:2:0:2
+TotalTime 19.892536 sec
+
+[SUM] 0.00-19.89 sec  7.50 MBytes  3.16 Mbits/sec  2245    2215:16:5:3:0:2:1:3

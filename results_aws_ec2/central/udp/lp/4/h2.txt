@@ -1,0 +1,86 @@
+------------------------------------------------------------
+Server listening on UDP port 5001 with pid 31888
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 52888 (Time: 1527798620309686301)
+[ 36] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 35506 (Time: 1527798620521110440)
+[ 37] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 41986 (Time: 1527798620712382030)
+[ 38] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 47866 (Time: 1527798620823057580)
+[ 39] local 10.0.0.2 port 5001 connected with 10.0.0.100 port 35290 (Time: 1527798621265695463)
+TID [ 35]
+Interval 0.00-11.21 sec
+Transfer 1.25 MBytes
+Bandwidth  936 Kbits/sec
+Jitter 0.470589 ms
+LostO    1
+TotalO   893
+RateO 0.11%
+LatencyAvg 861.933 ms
+LatencyMin  0.007 ms
+LatencyMax 1206.389 ms
+LatencyStdev 443.141 ms
+PPSO   79 pps
+TotalTime 11.206867 sec
+
+TID [ 36]
+Interval 0.00-11.41 sec
+Transfer 1.25 MBytes
+Bandwidth  920 Kbits/sec
+Jitter 0.503135 ms
+LostO    1
+TotalO   893
+RateO 0.11%
+LatencyAvg 884.080 ms
+LatencyMin  0.004 ms
+LatencyMax 1204.151 ms
+LatencyStdev 427.919 ms
+PPSO   78 pps
+TotalTime 11.406511 sec
+
+TID [ 37]
+Interval 0.00-11.57 sec
+Transfer 1.25 MBytes
+Bandwidth  907 Kbits/sec
+Jitter 1.615382 ms
+LostO    1
+TotalO   893
+RateO 0.11%
+LatencyAvg 910.726 ms
+LatencyMin  2.827 ms
+LatencyMax 1208.403 ms
+LatencyStdev 411.602 ms
+PPSO   77 pps
+TotalTime 11.567374 sec
+
+TID [ 38]
+Interval 0.00-11.64 sec
+Transfer  821 KBytes
+Bandwidth  578 Kbits/sec
+Jitter 3.187669 ms
+LostO  321
+TotalO   893
+RateO 36%
+LatencyAvg 767.567 ms
+LatencyMin  2.685 ms
+LatencyMax 1209.566 ms
+LatencyStdev 424.783 ms
+PPSO   49 pps
+TotalTime 11.636315 sec
+
+TID [ 39]
+Interval 0.00-11.76 sec
+Transfer 1.08 MBytes
+Bandwidth  771 Kbits/sec
+Jitter 8.019856 ms
+LostO  122
+TotalO   893
+RateO 14%
+LatencyAvg 926.443 ms
+LatencyMin 36.451 ms
+LatencyMax 1209.598 ms
+LatencyStdev 366.688 ms
+PPSO   65 pps
+TotalTime 11.759704 sec
+
+[SUM] 0.00-11.76 sec  5.63 MBytes  4.02 Mbits/sec  348 pps

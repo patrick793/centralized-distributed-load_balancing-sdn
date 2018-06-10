@@ -18,9 +18,8 @@ __author__  = "Patrick Atienza"
 # from operator import attrgetter
 # import os
 
-import sys
 import ctypes
- 
+
 import random
 from ryu.base import app_manager
 from ryu.controller import ofp_event
@@ -52,21 +51,19 @@ class SimpleSwitch13(app_manager.RyuApp):
     def __init__(self, *args, **kwargs):
         super(SimpleSwitch13, self).__init__(*args, **kwargs)
 
-        # os.system('clear')
-
         self.client_cnt = 3
         self.server_cnt = 3
 
 
-        self.is_rr = False  # Round-robin
+        self.is_rr = True  # Round-robin
+        self.is_rb = False # Random
         self.is_ih = False # IP Hashing
-        self.is_rb = True  # Weighted Random
         self.is_lc = False  # Least connections
         self.is_lb = False   # Least bandwidth
         self.is_lp = False   # Least packets
 
-        self.is_tcp = False
-        self.is_udp = True
+        self.is_tcp = True
+        self.is_udp = False
 
         self.mac_to_port = {}
         self.port_to_mac = {}
@@ -113,13 +110,6 @@ class SimpleSwitch13(app_manager.RyuApp):
             self.cur_spine_index = 0
             self.cur_server_leaf_index = 0
 
-        if self.is_rb:
-            self.max_weight = 1
-            while self.max_weight * 2 < sys.maxsize:
-                self.max_weight*=2
-            self.spine_weights = []
-            self.server_leaf_weights = []
-
         if self.is_lc or self.is_lb or self.is_lp:
             self.spine_active_ports = {}
             self.server_leaf_active_ports = {}
@@ -153,7 +143,7 @@ class SimpleSwitch13(app_manager.RyuApp):
         self.count_in = 0
 
     def init_delay(self):
-        hub.sleep(1.5)
+        hub.sleep(2)
         # time.sleep(5)
 
         self.is_init = False
@@ -181,12 +171,6 @@ class SimpleSwitch13(app_manager.RyuApp):
         #     bands = [parser.OFPMeterBandDrop(type_=ofproto.OFPMBT_DROP, len_=0, rate=1000, burst_size=10)]
         #     req=parser.OFPMeterMod(datapath=datapath, command=ofproto.OFPMC_ADD, flags=ofproto.OFPMF_KBPS, meter_id=99, bands=bands)
         #     datapath.send_msg(req)
-
-        if self.is_rb:
-            for x in range(len(self.spine_dpids) / 2):
-                self.spine_weights.append({"w" : self.max_weight, "i" : x})
-            for x in self.server_leaf_dpids:
-                self.server_leaf_weights.append({"w" : self.max_weight, "i" : x-1})
 
         if self.is_lc or self.is_lb or self.is_lp:
             for x in range(len(self.spine_dpids) / 2):
@@ -421,29 +405,7 @@ class SimpleSwitch13(app_manager.RyuApp):
                 if self.is_lb:
                     self.server_leaf_cur_total_transmitted_bytes[dpid] = total_transmitted_bytes
                 elif self.is_lp:
-                    self.server_leaf_cur_total_transmitted_packets[dpid] = total_transmitted_packets 
-            # self.logger.info(str(self.server_leaf_prev_total_transmitted_bytes[dpid]) + " " + str(self.server_leaf_cur_total_transmitted_bytes [dpid]))
-            # self.logger.info(str(self.server_leaf_prev_time_sec[dpid]) + " " + str(self.server_leaf_cur_time_sec[dpid]))
-            # self.logger.info(str(self.server_leaf_prev_time_nsec[dpid]) + " " + str(self.server_leaf_cur_time_nsec[dpid]))
-            # print(body)
-
-
-                # for x in ports_to_check_per_dpid[dpid]:
-                #     cur_total
-
-
-
-        # self.logger.info('datapath         port     '
-        #                  'rx-pkts  rx-bytes rx-error '
-        #                  'tx-pkts  tx-bytes tx-error')
-        # self.logger.info('---------------- -------- '
-        #                  '-------- -------- -------- '
-        #                  '-------- -------- --------')
-        # for stat in sorted(body, key=attrgetter('port_no')):
-        #     self.logger.info('%016x %8x %8d %8d %8d %8d %8d %8d',
-        #                      ev.msg.datapath.id, stat.port_no,
-        #                      stat.rx_packets, stat.rx_bytes, stat.rx_errors,
-        #                      stat.tx_packets, stat.tx_bytes, stat.tx_errors)
+                    self.server_leaf_cur_total_transmitted_packets[dpid] = total_transmitted_packets
 
     @set_ev_cls(ofp_event.EventOFPSwitchFeatures, CONFIG_DISPATCHER)
     def switch_features_handler(self, ev):
@@ -460,6 +422,7 @@ class SimpleSwitch13(app_manager.RyuApp):
         # 128, OVS will send Packet-In with invalid buffer_id and
         # truncated packet data. In that case, we cannot output packets
         # correctly.  The bug has been fixed in OVS v2.1.0.
+        
         match = parser.OFPMatch()
         actions = [parser.OFPActionOutput(ofproto.OFPP_CONTROLLER,
                                           ofproto.OFPCML_NO_BUFFER)]
@@ -468,7 +431,6 @@ class SimpleSwitch13(app_manager.RyuApp):
         self.datapaths[datapath.id] = datapath
 
         links_list = get_link(self, None)
-        # links=[(link.src.dpid,link.dst.dpid,{'port':link.src.port_no}) for link in links_list]
         
         for link in links_list:
             self.mac_to_port.setdefault(link.src.dpid, {})
@@ -627,11 +589,9 @@ class SimpleSwitch13(app_manager.RyuApp):
 
             max_spine_packets_per_sec = 0.0
             max_server_leaf_packets_per_sec = 0.0
-            # self.logger.info("PASS")
             for x in range(len(self.spine_dpids) / 2 ):
                 spine_active_ports_len = len(self.spine_active_ports[self.spine_dpids[x]])
-                # self.logger.info("SPINE")
-                # self.logger.info(spine_active_ports_len)
+                
                 if spine_active_ports_len == 0:
                     cur_spine_dpid_upper = self.spine_dpids[x + len(self.spine_dpids) / 2]
                     cur_spine_dpid_lower = self.spine_dpids[x]
@@ -660,27 +620,10 @@ class SimpleSwitch13(app_manager.RyuApp):
                 
             return cur_spine_dpid_upper, cur_spine_dpid_lower, cur_server_leaf_dpid
         elif self.is_rb:
-            r = randint(0, self.spine_weights[0]["w"])
-            for i, x in enumerate(self.spine_weights):
-                if r <= x["w"]:
-                    cur_spine_dpid_upper = self.spine_dpids[x["i"] + len(self.spine_dpids) / 2]
-                    cur_spine_dpid_lower = self.spine_dpids[x["i"]]
-                    self.spine_weights[i]["w"] /= 2
-                    if self.spine_weights[i]["w"] == 1:
-                        for w in range(len(self.spine_weights)):
-                            self.spine_weights[w]["w"] *= self.max_weight
-                    break
-            r = randint(0, self.server_leaf_weights[0]["w"])
-            for i, x in enumerate(self.server_leaf_weights):
-                if r <= x["w"]:
-                    cur_server_leaf_dpid = self.server_leaf_dpids[x["i"]]
-                    self.server_leaf_weights[i]["w"] /= 2
-                    if self.server_leaf_weights[i]["w"] == 1:
-                        for w in range(len(self.server_leaf_weights)):
-                            self.server_leaf_weights[w]["w"] *= self.max_weight
-                    break
-            self.spine_weights.sort(reverse=True)
-            self.server_leaf_weights.sort(reverse=True)
+            x = randint(0, len(self.spine_dpids) / 2 - 1)
+            cur_spine_dpid_upper = self.spine_dpids[x + len(self.spine_dpids) / 2]
+            cur_spine_dpid_lower = self.spine_dpids[x]
+            cur_server_leaf_dpid = self.server_leaf_dpids[randint(0, len(self.server_leaf_dpids) - 1)]
             return cur_spine_dpid_upper, cur_spine_dpid_lower, cur_server_leaf_dpid
         elif self.is_ih:
             if src_ip == None:
@@ -707,7 +650,7 @@ class SimpleSwitch13(app_manager.RyuApp):
                     self.cur_spine_index = 0
                 self.logger.info("IP hash added!")
 
-            cur_spine_dpid_upper = self.  ip_hash_to_spine_dpid[hash_code] + len(self.spine_dpids) / 2
+            cur_spine_dpid_upper = self.ip_hash_to_spine_dpid[hash_code] + len(self.spine_dpids) / 2
             cur_spine_dpid_lower = self.ip_hash_to_spine_dpid[hash_code]
             cur_server_leaf_dpid = self.ip_hash_to_server_leaf_dpid[hash_code]
 
@@ -741,15 +684,12 @@ class SimpleSwitch13(app_manager.RyuApp):
         self.mac_to_port.setdefault(dpid, {})
         self.port_to_mac.setdefault(dpid, {})
 
-        # self.logger.info("packet in %s %s %s %s %s", dpid, src, dst, in_port, eth.ethertype)
-
         # learn a mac address to avoid FLOOD next time.
         if src != self.controller_mac:
             self.mac_to_port[dpid][src] = in_port
             self.port_to_mac[dpid][in_port] = src
 
         if eth.ethertype == ether_types.ETH_TYPE_ARP:
-            # print("It's ARP")           
             arp_header = pkt.get_protocols(arp.arp)[0]
             if self.is_init:
                 self.arp_init(datapath, arp_header, in_port)
@@ -760,8 +700,6 @@ class SimpleSwitch13(app_manager.RyuApp):
 
         if eth.ethertype == ether_types.ETH_TYPE_IP:
             ip_header = pkt.get_protocols(ipv4.ipv4)[0]
-
-            # print(str(dpid) + " " + str(ip_header.proto))
 
             cookie = random.randint(0, 0xffffffffffffffff)
             idle_timeout = 10
@@ -810,7 +748,8 @@ class SimpleSwitch13(app_manager.RyuApp):
                     out_port_server_leaf_to_server = self.mac_to_port[cur_server_leaf_dpid][cur_target_server_mac]
                     out_port_spine_upper_to_spine_lower = self.mac_to_port[cur_spine_dpid_upper][cur_spine_dpid_lower]
 
-                    self.logger.info("Current Path: " + src + " -> " + str(dpid) + " -> " + str(cur_spine_dpid_upper) +
+                    self.count_in += 1
+                    self.logger.info(str(self.count_in) + " Current Path: " + src + " -> " + str(dpid) + " -> " + str(cur_spine_dpid_upper) +
                         " -> " + str(cur_spine_dpid_lower) + " -> " + str(cur_server_leaf_dpid) + " -> " + self.dpid_to_mac[cur_server_leaf_dpid])
 
                     # Client Switch -> Spine Switch Upper
@@ -931,9 +870,7 @@ class SimpleSwitch13(app_manager.RyuApp):
 
                     if self.is_lc or self.is_lb or self.is_lp:
                         self.spine_active_ports[cur_spine_dpid_lower].append(udp_header.src_port)
-                        # print("cur_server_leaf_dpid: " + str(cur_server_leaf_dpid))
                         self.server_leaf_active_ports[cur_server_leaf_dpid].append(udp_header.src_port)
-                        # print(self.spine_active_ports)
 
                     self.l4_port_to_ip[udp_header.src_port] = []
                     self.l4_port_to_ip[udp_header.src_port].append(cur_spine_dpid_upper)
@@ -953,15 +890,9 @@ class SimpleSwitch13(app_manager.RyuApp):
                     out_port_server_leaf_to_server = self.mac_to_port[cur_server_leaf_dpid][cur_target_server_mac]
                     out_port_spine_upper_to_spine_lower = self.mac_to_port[cur_spine_dpid_upper][cur_spine_dpid_lower]
 
-                    # self.logger.info(str(dpid) + " udp_port: " + str(udp_header.src_port))
-                    # self.logger.info(str(dpid) + " : " + str(eth.ethertype) + ", " + str(src) + ", " + str(dst) + ", " + str(ip_header.proto) +
-                    #     ", " + str(ip_header.src) + ", " + str(ip_header.dst) + ", " + str(udp_header.src_port) + ", " + str(udp_header.dst_port))
-                    
                     self.count_in += 1
                     self.logger.info(str(self.count_in) + " Current Path: " + src + " -> " + str(dpid) + " -> " + str(cur_spine_dpid_upper) +
                         " -> " + str(cur_spine_dpid_lower) + " -> " + str(cur_server_leaf_dpid) + " -> " + self.dpid_to_mac[cur_server_leaf_dpid])
-
-                    
 
                     match_send = parser.OFPMatch(
                         # in_port=in_port,
@@ -1004,8 +935,6 @@ class SimpleSwitch13(app_manager.RyuApp):
                     cur_spine_dpid_upper = self.l4_port_to_ip[udp_header.dst_port][0]
                     cur_spine_dpid_lower = self.l4_port_to_ip[udp_header.dst_port][1]
                     cur_client_leaf_dpid = self.l4_port_to_ip[udp_header.dst_port][2]
-
-                    # del self.l4_port_to_ip[udp_header.dst_port]
 
                     cur_target_client_mac =  self.dpid_to_mac[cur_client_leaf_dpid]
 
@@ -1058,41 +987,6 @@ class SimpleSwitch13(app_manager.RyuApp):
 
                     self.add_flow(client_leaf_datapath, match_receive, actions, idle_timeout=idle_timeout, cookie=cookie)
             return
-           
-
-
-
-        # if dst in self.mac_to_port[dpid]:
-        #     out_port = self.mac_to_port[dpid][dst]
-        # else:
-        #     out_port = ofproto.OFPP_FLOOD
-
-        # actions = [parser.OFPActionOutput(out_port)]
-
-        # # install a flow to avoid packet_in next time
-        # if out_port != ofproto.OFPP_FLOOD:
-        #     match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
-        #     # verify if we have a valid buffer_id, if yes avoid to send both
-        #     # flow_mod & packet_out
-        #     if msg.buffer_id != ofproto.OFP_NO_BUFFER:
-        #         self.add_flow(datapath, 1, match, actions, msg.buffer_id)
-        #         return
-        #     else:
-        #         self.add_flow(datapath, 1, match, actions)
-        # data = None
-        # if msg.buffer_id == ofproto.OFP_NO_BUFFER:
-        #     data = msg.data
-
-        # out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
-        #                           in_port=in_port, actions=actions, data=data)
-        # datapath.send_msg(out)
-
-    # @set_ev_cls(event.EventSwitchEnter)
-    # def get_topology_data(self, ev):
-
-        # hosts_list = get_host(self,None)
-        # switch_list = get_switch(self, None)
-        # switches=[switch.dp.id for switch in switch_list]
 
     @set_ev_cls(ofp_event.EventOFPFlowRemoved, MAIN_DISPATCHER)
     def flow_removed_handler(self, ev):
@@ -1132,27 +1026,3 @@ class SimpleSwitch13(app_manager.RyuApp):
                 else:
                     return
 
-
-            # self.logger.info(self.spine_active_ports)
-            # self.logger.info(self.server_leaf_active_ports)
-
-        # if msg.reason == ofproto.OFPRR_IDLE_TIMEOUT:
-        #     reason = 'IDLE TIMEOUT'
-        # elif msg.reason == ofproto.OFPRR_HARD_TIMEOUT:
-        #     reason = 'HARD TIMEOUT'
-        # elif msg.reason == ofproto.OFPRR_DELETE:
-        #     reason = 'DELETE'
-        # elif msg.reason == ofproto.OFPRR_GROUP_DELETE:
-        #     reason = 'GROUP DELETE'
-        # else:
-        #     reason = 'unknown'
-
-        # self.logger.info('OFPFlowRemoved received: '
-        #                   'cookie=%d priority=%d reason=%s table_id=%d '
-        #                   'duration_sec=%d duration_nsec=%d '
-        #                   'idle_timeout=%d hard_timeout=%d '
-        #                   'packet_count=%d byte_count=%d match.fields=%s',
-        #                   msg.cookie, msg.priority, reason, msg.table_id,
-        #                   msg.duration_sec, msg.duration_nsec,
-        #                   msg.idle_timeout, msg.hard_timeout,
-        #                   msg.packet_count, msg.byte_count, msg.match)

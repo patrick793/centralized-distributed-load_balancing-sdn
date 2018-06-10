@@ -1,0 +1,34 @@
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 16354
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.4 port 37560 connected with 10.0.0.100 port 5001 (Time: 1527809902528195530)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 16361
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.4 port 37562 connected with 10.0.0.100 port 5001 (Time: 1527809902732177533)
+TID [ 43]
+Interval 0.00-10.58 sec
+Transfer 9.75 MBytes
+Bandwidth 7.73 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 1
+Cwnd 574K
+RTTO 751024 us
+TotalTime 10.584920 sec
+
+TID [ 43]
+Interval 0.00-10.85 sec
+Transfer 6.75 MBytes
+Bandwidth 5.22 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 1
+Cwnd 579K
+RTTO 895739 us
+TotalTime 10.846286 sec
+

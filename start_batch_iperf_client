@@ -4,7 +4,7 @@ HOST=$1
 TCPUDP=$2
 PARALLEL=$3
 # MTIME=$4
-first="05/28/2018"
+first="05/27/2018"
 lb="rr"
 lbmode="tcp"
 ntype="distrib"
@@ -24,24 +24,24 @@ sleep $sleep_seconds
 
 if [ $TCPUDP == "u" ]; then
 	counter=1
-	while [ $counter -le 1 ]
+	while [ $counter -le $PARALLEL ]
 	do
-		./start_iperf_client "$HOST" "$TCPUDP" "$PARALLEL" &
+		./start_iperf_client "$HOST" "$TCPUDP" 1 &
 		((counter++))
-		sleep 1
+		sleep 0.2
 	done
 elif [ $TCPUDP == "t" ]; then
 	counter=1
-	while [ $counter -le 1 ]
+	while [ $counter -le $PARALLEL ]
 	do
-		./start_iperf_client "$HOST" "$TCPUDP" "$PARALLEL" &
+		./start_iperf_client "$HOST" "$TCPUDP" 1 &
 		((counter++))
-		sleep 1
+		sleep 0.2
 	done
 fi
 
 if [ $? -eq 0 ]; then
-	sleep 3
+	# sleep 1
 	
 	# if [ "cat ryu/ryu/app/sample.py | grep True | grep is_rr" ]
 	# then
@@ -77,7 +77,7 @@ if [ $? -eq 0 ]; then
 	# 	ntype="central"
 	# fi
 
-	# mkdir -p results/"$ntype"/"$lbmode"/"$lb"/"$PARALLEL" > /dev/null
+	mkdir -p results/"$ntype"/"$lbmode"/"$lb"/"$PARALLEL" > /dev/null
 	# cp "$HOST".txt results/"$ntype"/"$lbmode"/"$lb"/"$PARALLEL"
 	# cp h1.txt h2.txt h3.txt results/"$ntype"/"$lbmode"/"$lb"/"$PARALLEL" > /dev/null
     echo "Finished"

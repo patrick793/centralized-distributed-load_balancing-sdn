@@ -1,0 +1,69 @@
+------------------------------------------------------------
+Server listening on TCP port 5001 with pid 4496
+Read buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 36] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 52516 (Time: 1527802042525803331)
+[ 37] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 52554 (Time: 1527802042636509852)
+[ 38] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 52522 (Time: 1527802042807606494)
+[ 39] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 52560 (Time: 1527802042938430731)
+[ 40] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 46168 (Time: 1527802042978695351)
+[ 41] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 46174 (Time: 1527802045031578250)
+[ 42] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 46176 (Time: 1527802045252996017)
+TID [ 38]
+Interval 0.00-20.48 sec
+Transfer 2.12 MBytes
+Bandwidth  870 Kbits/sec
+Reads 514
+DistBin 504:2:3:2:0:1:0:2
+TotalTime 20.480103 sec
+
+TID [ 37]
+Interval 0.00-21.70 sec
+Transfer 2.62 MBytes
+Bandwidth 1.01 Mbits/sec
+Reads 703
+DistBin 691:4:3:1:1:0:1:2
+TotalTime 21.703823 sec
+
+TID [ 36]
+Interval 0.00-21.77 sec
+Transfer 2.50 MBytes
+Bandwidth  964 Kbits/sec
+Reads 608
+DistBin 596:5:2:1:0:0:0:4
+TotalTime 21.765581 sec
+
+TID [ 39]
+Interval 0.00-22.29 sec
+Transfer 2.25 MBytes
+Bandwidth  847 Kbits/sec
+Reads 643
+DistBin 634:5:1:0:0:1:0:2
+TotalTime 22.291694 sec
+
+TID [ 40]
+Interval 0.00-22.42 sec
+Transfer 2.21 MBytes
+Bandwidth  827 Kbits/sec
+Reads 628
+DistBin 620:2:2:1:0:1:0:2
+TotalTime 22.419334 sec
+
+TID [ 42]
+Interval 0.00-22.62 sec
+Transfer  708 KBytes
+Bandwidth  257 Kbits/sec
+Reads 202
+DistBin 197:1:3:1:0:0:0:0
+TotalTime 22.622541 sec
+
+TID [ 41]
+Interval 0.00-23.02 sec
+Transfer  963 KBytes
+Bandwidth  343 Kbits/sec
+Reads 291
+DistBin 285:2:3:0:1:0:0:0
+TotalTime 23.019132 sec
+
+[SUM] 0.00-23.02 sec  13.3 MBytes  4.86 Mbits/sec  3589    3527:21:17:6:2:3:1:12

@@ -1,0 +1,70 @@
+------------------------------------------------------------
+Server listening on UDP port 5001 with pid 12856
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 33861 (Time: 1527806240456028949)
+[ 44] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 48835 (Time: 1527806240667424032)
+[ 45] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 34323 (Time: 1527806241070247148)
+[ 46] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 52125 (Time: 1527806241614713636)
+TID [ 43]
+Interval 0.00-10.00 sec
+Transfer 1.25 MBytes
+Bandwidth 1.05 Mbits/sec
+Jitter 0.001568 ms
+LostO    1
+TotalO   893
+RateO 0.11%
+LatencyAvg  0.007 ms
+LatencyMin  0.004 ms
+LatencyMax  0.029 ms
+LatencyStdev  0.003 ms
+PPSO   89 pps
+TotalTime 10.003691 sec
+
+TID [ 44]
+Interval 0.00-10.21 sec
+Transfer 1.25 MBytes
+Bandwidth 1.03 Mbits/sec
+Jitter 0.001821 ms
+LostO    1
+TotalO   893
+RateO 0.11%
+LatencyAvg  0.009 ms
+LatencyMin  0.004 ms
+LatencyMax  0.032 ms
+LatencyStdev  0.003 ms
+PPSO   87 pps
+TotalTime 10.210631 sec
+
+TID [ 45]
+Interval 0.00-10.61 sec
+Transfer 1.25 MBytes
+Bandwidth  989 Kbits/sec
+Jitter 0.001761 ms
+LostO    1
+TotalO   893
+RateO 0.11%
+LatencyAvg  0.007 ms
+LatencyMin  0.004 ms
+LatencyMax  0.019 ms
+LatencyStdev  0.002 ms
+PPSO   84 pps
+TotalTime 10.609203 sec
+
+TID [ 46]
+Interval 0.00-11.16 sec
+Transfer 1.25 MBytes
+Bandwidth  940 Kbits/sec
+Jitter 0.005711 ms
+LostO    1
+TotalO   893
+RateO 0.11%
+LatencyAvg  0.009 ms
+LatencyMin  0.004 ms
+LatencyMax  0.041 ms
+LatencyStdev  0.004 ms
+PPSO   79 pps
+TotalTime 11.156983 sec
+
+[SUM] 0.00-11.16 sec  5.00 MBytes  3.76 Mbits/sec  339 pps

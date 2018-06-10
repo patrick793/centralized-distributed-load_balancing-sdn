@@ -1,0 +1,68 @@
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 20804
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.6 port 51276 connected with 10.0.0.100 port 5001 (Time: 1527811802800074440)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 20824
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.6 port 51282 connected with 10.0.0.100 port 5001 (Time: 1527811803236221734)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 20830
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.6 port 51284 connected with 10.0.0.100 port 5001 (Time: 1527811803432169615)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 20817
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.6 port 51280 connected with 10.0.0.100 port 5001 (Time: 1527811804345174605)
+TID [ 43]
+Interval 0.00-10.23 sec
+Transfer 2.75 MBytes
+Bandwidth 2.25 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 1
+Cwnd 366K
+RTTO 1673402 us
+TotalTime 10.233089 sec
+
+TID [ 43]
+Interval 0.00-10.29 sec
+Transfer 6.12 MBytes
+Bandwidth 5.00 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 1
+Cwnd 544K
+RTTO 857512 us
+TotalTime 10.285112 sec
+
+TID [ 43]
+Interval 0.00-10.30 sec
+Transfer 6.12 MBytes
+Bandwidth 4.99 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 1
+Cwnd 550K
+RTTO 857183 us
+TotalTime 10.296768 sec
+
+TID [ 43]
+Interval 0.00-10.03 sec
+Transfer 1.25 MBytes
+Bandwidth 1.04 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 2
+Cwnd 162K
+RTTO 1894890 us
+TotalTime 10.034924 sec
+

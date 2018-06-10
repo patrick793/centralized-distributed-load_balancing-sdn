@@ -1,0 +1,38 @@
+------------------------------------------------------------
+Server listening on UDP port 5001 with pid 28116
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 34409 (Time: 1527796770114817681)
+[ 36] local 10.0.0.1 port 5001 connected with 10.0.0.100 port 48405 (Time: 1527796771010930629)
+TID [ 35]
+Interval 0.00-11.21 sec
+Transfer  754 KBytes
+Bandwidth  551 Kbits/sec
+Jitter 0.353780 ms
+LostO  368
+TotalO   893
+RateO 41%
+LatencyAvg 649.378 ms
+LatencyMin  0.005 ms
+LatencyMax 1208.450 ms
+LatencyStdev 439.373 ms
+PPSO   46 pps
+TotalTime 11.211870 sec
+
+TID [ 36]
+Interval 0.00-11.69 sec
+Transfer 1.25 MBytes
+Bandwidth  895 Kbits/sec
+Jitter 8.350822 ms
+LostO    3
+TotalO   893
+RateO 0.34%
+LatencyAvg 968.576 ms
+LatencyMin 50.253 ms
+LatencyMax 1208.270 ms
+LatencyStdev 349.909 ms
+PPSO   76 pps
+TotalTime 11.688499 sec
+
+[SUM] 0.00-11.69 sec  1.98 MBytes  1.42 Mbits/sec  122 pps

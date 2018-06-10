@@ -1,0 +1,68 @@
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 18730
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.5 port 47454 connected with 10.0.0.100 port 5001 (Time: 1527810852876177786)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 18743
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.5 port 47458 connected with 10.0.0.100 port 5001 (Time: 1527810853080134233)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 18755
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.5 port 47462 connected with 10.0.0.100 port 5001 (Time: 1527810853280118390)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 18762
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 43] local 10.0.0.5 port 47464 connected with 10.0.0.100 port 5001 (Time: 1527810853480143096)
+TID [ 43]
+Interval 0.00-10.18 sec
+Transfer 4.50 MBytes
+Bandwidth 3.71 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 1
+Cwnd 456K
+RTTO 1166525 us
+TotalTime 10.175120 sec
+
+TID [ 43]
+Interval 0.00-10.11 sec
+Transfer 4.38 MBytes
+Bandwidth 3.63 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 1
+Cwnd 476K
+RTTO 1162368 us
+TotalTime 10.113217 sec
+
+TID [ 43]
+Interval 0.00-10.39 sec
+Transfer 4.12 MBytes
+Bandwidth 3.33 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 1
+Cwnd 489K
+RTTO 1324533 us
+TotalTime 10.394086 sec
+
+TID [ 43]
+Interval 0.00-11.20 sec
+Transfer 6.38 MBytes
+Bandwidth 4.78 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 1
+Cwnd 613K
+RTTO 1355158 us
+TotalTime 11.197883 sec
+

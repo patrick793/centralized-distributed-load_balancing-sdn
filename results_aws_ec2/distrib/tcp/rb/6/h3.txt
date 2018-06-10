@@ -1,0 +1,69 @@
+------------------------------------------------------------
+Server listening on TCP port 5001 with pid 17924
+Read buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 44] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 46174 (Time: 1527810562384270437)
+[ 45] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 46178 (Time: 1527810562706367142)
+[ 46] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 46146 (Time: 1527810562947846136)
+[ 47] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 46152 (Time: 1527810563028388819)
+[ 48] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 46158 (Time: 1527810563521747060)
+[ 49] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 46200 (Time: 1527810563551951041)
+[ 50] local 10.0.0.3 port 5001 connected with 10.0.0.100 port 46162 (Time: 1527810564900507238)
+TID [ 44]
+Interval 0.00-17.28 sec
+Transfer 5.12 MBytes
+Bandwidth 2.49 Mbits/sec
+Reads 1806
+DistBin 1806:0:0:0:0:0:0:0
+TotalTime 17.279123 sec
+
+TID [ 47]
+Interval 0.00-19.12 sec
+Transfer 4.75 MBytes
+Bandwidth 2.08 Mbits/sec
+Reads 1407
+DistBin 1392:7:5:0:0:0:2:1
+TotalTime 19.119938 sec
+
+TID [ 49]
+Interval 0.00-19.15 sec
+Transfer 4.00 MBytes
+Bandwidth 1.75 Mbits/sec
+Reads 1152
+DistBin 1137:5:4:1:1:0:0:4
+TotalTime 19.145064 sec
+
+TID [ 50]
+Interval 0.00-19.62 sec
+Transfer 2.62 MBytes
+Bandwidth 1.12 Mbits/sec
+Reads 804
+DistBin 796:3:3:0:0:0:0:2
+TotalTime 19.620894 sec
+
+TID [ 46]
+Interval 0.00-19.88 sec
+Transfer 2.50 MBytes
+Bandwidth 1.06 Mbits/sec
+Reads 661
+DistBin 649:6:2:1:0:0:0:3
+TotalTime 19.876632 sec
+
+TID [ 45]
+Interval 0.00-20.49 sec
+Transfer 2.75 MBytes
+Bandwidth 1.13 Mbits/sec
+Reads 696
+DistBin 681:6:4:1:1:0:1:2
+TotalTime 20.488881 sec
+
+TID [ 48]
+Interval 0.00-22.49 sec
+Transfer 2.58 MBytes
+Bandwidth  964 Kbits/sec
+Reads 786
+DistBin 778:2:2:1:0:1:1:1
+TotalTime 22.490349 sec
+
+[SUM] 0.00-22.49 sec  24.3 MBytes  9.08 Mbits/sec  7312    7239:29:20:4:2:1:4:13

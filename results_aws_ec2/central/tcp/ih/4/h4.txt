@@ -1,0 +1,68 @@
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 2650
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.4 port 42802 connected with 10.0.0.100 port 5001 (Time: 1527800332092145508)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 2656
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.4 port 42804 connected with 10.0.0.100 port 5001 (Time: 1527800332296219718)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 2668
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.4 port 42808 connected with 10.0.0.100 port 5001 (Time: 1527800332496175736)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 2686
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.4 port 42814 connected with 10.0.0.100 port 5001 (Time: 1527800332700092443)
+TID [ 35]
+Interval 0.00-10.99 sec
+Transfer 2.88 MBytes
+Bandwidth 2.19 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 1
+Cwnd 403K
+RTTO 2249629 us
+TotalTime 10.993396 sec
+
+TID [ 35]
+Interval 0.00-13.80 sec
+Transfer 2.09 MBytes
+Bandwidth 1.27 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 99
+Cwnd 155K
+RTTO 2271059 us
+TotalTime 13.799827 sec
+
+TID [ 35]
+Interval 0.00-14.62 sec
+Transfer 3.70 MBytes
+Bandwidth 2.12 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 132
+Cwnd 258K
+RTTO 2088014 us
+TotalTime 14.615790 sec
+
+TID [ 35]
+Interval 0.00-14.92 sec
+Transfer 2.65 MBytes
+Bandwidth 1.49 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 127
+Cwnd 217K
+RTTO 1840242 us
+TotalTime 14.923736 sec
+

@@ -1,0 +1,102 @@
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 3760
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.6 port 51704 connected with 10.0.0.100 port 5001 (Time: 1527801212536221149)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 3766
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.6 port 51706 connected with 10.0.0.100 port 5001 (Time: 1527801212740178447)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 3784
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.6 port 51712 connected with 10.0.0.100 port 5001 (Time: 1527801212940191320)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 3802
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.6 port 51718 connected with 10.0.0.100 port 5001 (Time: 1527801213140172170)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 3820
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.6 port 51724 connected with 10.0.0.100 port 5001 (Time: 1527801213344153384)
+------------------------------------------------------------
+Client connecting to 10.0.0.100, TCP port 5001 with pid 3838
+Write buffer size:  128 KByte
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.6 port 51730 connected with 10.0.0.100 port 5001 (Time: 1527801213564201989)
+TID [ 35]
+Interval 0.00-13.00 sec
+Transfer 1.22 MBytes
+Bandwidth  785 Kbits/sec
+WriteO 1
+ErrorO 0
+RetryO 65
+Cwnd 98K
+RTTO 2091532 us
+TotalTime 12.995710 sec
+
+TID [ 35]
+Interval 0.00-13.72 sec
+Transfer 1.78 MBytes
+Bandwidth 1.09 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 87
+Cwnd 145K
+RTTO 2023173 us
+TotalTime 13.715733 sec
+
+TID [ 35]
+Interval 0.00-14.06 sec
+Transfer 2.52 MBytes
+Bandwidth 1.50 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 85
+Cwnd 172K
+RTTO 2074437 us
+TotalTime 14.059747 sec
+
+TID [ 35]
+Interval 0.00-14.30 sec
+Transfer 2.43 MBytes
+Bandwidth 1.43 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 95
+Cwnd 186K
+RTTO 1777242 us
+TotalTime 14.303711 sec
+
+TID [ 35]
+Interval 0.00-13.81 sec
+Transfer 1.65 MBytes
+Bandwidth 1.00 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 77
+Cwnd 124K
+RTTO 1854462 us
+TotalTime 13.811761 sec
+
+TID [ 35]
+Interval 0.00-14.42 sec
+Transfer 1.96 MBytes
+Bandwidth 1.14 Mbits/sec
+WriteO 1
+ErrorO 0
+RetryO 92
+Cwnd 144K
+RTTO 1727233 us
+TotalTime 14.423745 sec
+
