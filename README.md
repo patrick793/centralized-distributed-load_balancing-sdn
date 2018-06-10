@@ -11,10 +11,11 @@ This study uses these following tools:
 * [iPerf 2.0.10] - network performance benchmarking tool
 * [Mininet 2.3.0] - network emulator
 
-### Installation
+### Quick Installation
 
-##### Quick Install
 * Run install.sh
+
+### Manual Installation
 
 ##### Mininet
 
