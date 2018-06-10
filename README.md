@@ -38,8 +38,9 @@ This study uses these following tools:
 * Run topo.py: sudo mn --custom topo.py --topo mytopo --link tc --controller=remote,port=6633 --mac
 * Inside Mininet terminal execute xTerms for servers and clients: xterm h1 h2 ... hn
 * Inside xTerm
-    * For each server, type: iperf -s -e | tee h<num>.txt for TCP or iperf -s -u -e| tee h<num>.txt for UDP
-    * For each client, type ./start_batch_iperf_client h<num> t <parallel> for TCP or ./start_batch_iperf_client h<num> u <parallel> for UDP
+    * For each server, type: iperf -s -e | tee h[host_num].txt for TCP or iperf -u -s -e| tee h[host_num].txt for UDP
+    * For each client, type ./start_batch_iperf_client h[host_num] t [no_of_connections] for TCP
+    * or ./start_batch_iperf_client h[host_num] u [no_of_connections] for UDP
 * Run get_results.py to get the needed results: python get_results.py
 
 [Ryu]: <https://osrg.github.io/ryu/>
